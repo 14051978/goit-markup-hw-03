@@ -104,6 +104,8 @@ span{
 }
 .navi{
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .navi .link {
     display: block;
