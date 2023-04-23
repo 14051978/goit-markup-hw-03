@@ -34,6 +34,9 @@ body {
     
     
 }
+img{
+    display: block;
+}
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -70,7 +73,7 @@ ul{
     display: flex;
     align-items: center;
 }
-.logo{
+.header-logo{
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -89,6 +92,7 @@ ul{
 
 }
 .logo .link{
+    
     text-decoration: none;  
 }
 span{
@@ -115,11 +119,11 @@ span{
 }
 .navi-item .link:hover,
 .navi-item .link:focus {
-    color:var(--hover-color);
+  color:var(--hover-color);
 
 }
 .navi .link.current{
-    color: var(--accent-color);
+   color: var(--accent-color);
 }
 address {
     font-style: normal;
@@ -143,23 +147,26 @@ address {
 }
 /* main-section */
     .section{
-        background-color: var(--text-color);
+        
+    padding: 188px 0;
+    
+    background-color: var(--text-color);
     }
     .container-moto{
-        display: block;
+    display: block;
     }
     .section-moto{
-        max-width: 496px;
-        margin-bottom: 48px;
-        margin-left: auto;
-        margin-right: auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
          
-        color: var(--primary-white);
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        text-align: center;
-        letter-spacing: 0.02em;
+    color: var(--primary-white);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
     }
 .section-button{
     display: block;
@@ -193,6 +200,8 @@ address {
     display: flex;
 }
 .features{
+    padding: 120px 0;
+    
     background-color:var(--primary-white);
 }
 .features-list{
@@ -217,8 +226,11 @@ address {
     line-height: 1.5;
 
 }
+
 /* doing section  */
 .doing-section {
+    padding-bottom: 120px;
+    
     background-color:var(--primary-white);   
 }
 .section-title{
@@ -241,7 +253,8 @@ address {
 /* team-section */
 
 .team-section-title{
-
+    margin-bottom: 72px;
+    
     color: var(--text-color);
     font-weight: 700;
     font-size: 36px;
@@ -251,9 +264,13 @@ address {
     letter-spacing: 0.02em;
 }
 .team-section{
+    padding: 120px 0;
+    
     background-color:#F4F4FD ;
 
-
+}
+.card-container{
+    padding: 32px 16px 32px 16px;
 }
 
 .team-list{
@@ -261,11 +278,13 @@ address {
     gap: 24px;
 }
 .team-card{
+    border-radius: 0 0 4px 4px;
     background-color: var(--primary-white);
 }
      
 .team-name{
     text-align: center;
+    margin-bottom: 8px;
     
     color: var(--text-color);
     font-weight: 500;
@@ -283,6 +302,7 @@ address {
     
 }
 .footer{
+    padding: 100px 0;
     background-color:var(--text-color);
      
 }
@@ -293,10 +313,21 @@ address {
     font-size: 16px;
     line-height: 1.5;
 }
-
-.footer-logo{
+.logo-footer{
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 16px;  
+    
+    color:var(--accent-color); 
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+.footer-logo{
+    
     
     color: #F4F4FD ;;
     font-family: Raleway, sans-serif;
@@ -306,6 +337,9 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+}
+.portfolio-section{
+    padding: 96px 0 120px 0;
 }
 .service-section{
     background-color: #fff;
@@ -317,7 +351,11 @@ address {
     margin-bottom: 72px;
 }
 .btn-filtr{
-    background-color: #F4F4FD;;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    
+    background-color: #F4F4FD;
     color: var(--accent-color);
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -328,10 +366,16 @@ address {
 }
 .btn-filtr:hover,
 .btn-filtr:focus {
-background-color: #404BBF;
-color: var(--primary-white);
-}
+    border: 1px solid transparent;
 
+    background-color: #404BBF;
+    color: var(--primary-white);
+}
+.service-container{
+    padding: 32px 16px ;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .service-list{
     display: flex;
     flex-wrap: wrap;
@@ -340,6 +384,7 @@ color: var(--primary-white);
 }
 .service-title {
     text-align: center;
+    margin-bottom: 8px;
     
     color:var(--text-color);
     font-weight: 500;
